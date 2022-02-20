@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #c0c0c0 url("../../../etc/assets/c0v-members/content-image-color-v2.jpg") center top/200% repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+.box-wrapper {
+  width: 100%;
+}
+
+/*# sourceMappingURL=style.css.map */
