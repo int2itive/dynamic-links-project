@@ -21,22 +21,29 @@ ready(() => {
   }
   
   function dothis(elem) {
-  	const { transforms: {scale, xpos, ypos} } = elem;
-  	console.log(elem.url);
+  	const { 
+      url, 
+      title, 
+      transforms: {scale, xpos, ypos},
+      img,
+      alt
+    } = elem;
+  	
+    console.log(elem.url);
   	const styleStr = `transform: scale(${scale}) translate(${xpos}px, ${ypos}px);`; console.log(styleStr);
   	
     const box = `<div class="box">
             <figure>
-              <img src="${elem.img}" alt="Luscious pic of Chantel Riley" style="${styleStr}" />
+              <img src="${img}" alt="Luscious pic of Chantel Riley" style="${styleStr}" />
             </figure>
             <div class="cat">
               Unforgettable
             </div>
             <h2>
-              ${elem.title}<br>
+              ${title}<br>
             </h2>
             <div class="cta">
-              <a class="btn" href="${elem.url}">Read more</a>
+              <a class="btn" href="${url}" target="_blank">Read more</a>
             </div>
           </div>`;
 
